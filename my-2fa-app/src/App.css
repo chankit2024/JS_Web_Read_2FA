@@ -1,0 +1,86 @@
+/* App.css */
+
+/* ตั้งค่าสไตล์พื้นฐาน */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+/* กล่องหลักของแอป */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* กล่องที่ห่อหุ้มเนื้อหา */
+.container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* ข้อความหัวข้อ */
+.title {
+  color: #2e3a59;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* ฟอร์มกรอกข้อมูล */
+.input-field {
+  width: 100%;
+  max-width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  text-align: center; /* จัดข้อความให้กลางในแนวนอน */
+  transition: all 0.3s ease;
+}
+
+/* ทำให้ข้อความ placeholder อยู่กลางทั้งแนวนอนและแนวตั้ง */
+.input-field::placeholder {
+  text-align: center; /* จัดข้อความ placeholder ให้อยู่กลาง */
+}
+
+.input-field:focus {
+  border-color: #56c7d4;
+  outline: none;
+}
+
+/* แสดงตัวเลข 2FA */
+.code-display {
+  background-color: #56c7d4;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.code-display h2 {
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* การแสดงเวลานับถอยหลัง */
+.countdown-display {
+  background-color: #ff6347;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
